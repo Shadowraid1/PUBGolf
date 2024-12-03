@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monopoly PubGolf - Breslau Edition</title>
+  <link rel="stylesheet" href="style.css"> <!-- Verweis auf die CSS-Datei -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍺 Monopoly PubGolf - Breslau Edition 🎲</h1>
+    </header>
+
+    <main>
+      <!-- Anzeige der aktuellen Runde (falls nötig) -->
+      <div id="roundLabel"></div>
+      
+      <section id="game-info">
+        <!-- Info über das Team und den aktuellen Stand -->
+        <div id="teamInfo" class="team-info"></div>
+        <!-- Anzeige des aktuellen Standortes und der Aufgabe -->
+        <div id="locationInfo" class="message"></div>
+        <div id="chanceCard" class="message"></div>
+      </section>
+
+      <section id="controls">
+        <!-- Buttons zur Steuerung des Spiels -->
+        <button id="startBtn" class="btn primary">Spiel Starten</button>
+        <button id="taskBtn" class="btn secondary" style="display:none;" onclick="markTaskCompleted()">Aufgabe Erledigt</button>
+        <button id="nextRound" class="btn secondary" style="display:none;" onclick="nextRound()">Nächste Runde</button>
+      </section>
+
+      <section id="scoreBoard" class="score-board"></section>
+    </main>
+
+    <footer>
+      <p>Viel Spaß bei Monopoly PubGolf! 🍻</p>
+    </footer>
+  </div>
+  
+  <!-- Einbindung der JavaScript-Datei -->
+  <script src="app.js"></script>
+</body>
+</html>
